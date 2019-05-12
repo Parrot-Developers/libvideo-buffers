@@ -47,7 +47,7 @@ struct vbuf_buffer {
 	/* Buffer type identifier (must be unique to a buffer implementation) */
 	uint32_t type;
 
-	/* Bufffer current reference count */
+	/* Buffer current reference count */
 	unsigned int ref_count;
 
 	/* True (not null) when the buffer is write-locked */

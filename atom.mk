@@ -28,6 +28,8 @@ LOCAL_MODULE := libvideo-buffers-generic
 LOCAL_CATEGORY_PATH := libs
 LOCAL_DESCRIPTION := Video buffers library, generic implementation
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/implem/generic/include
+LOCAL_EXPORT_CUSTOM_VARIABLES := LIBVIDEOBUFFERSGENERIC_HEADERS=$\
+	$(LOCAL_PATH)/implem/generic/include/video-buffers/vbuf_generic.h;
 LOCAL_CFLAGS := -DVBUF_API_EXPORTS -fvisibility=hidden -std=gnu99
 LOCAL_SRC_FILES := \
 	implem/generic/src/vbuf_generic.c
